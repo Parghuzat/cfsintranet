@@ -5,6 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+
 function NavScrollExample() {
   return (
     <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
@@ -23,7 +24,7 @@ function NavScrollExample() {
             <Nav.Link href="#action4">Chemistry</Nav.Link>
             <Nav.Link href="#action5">Toxicology</Nav.Link>
             <Nav.Link href="#action6">Physical Sciences</Nav.Link>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
+            {/* <NavDropdown title="Link" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
                 Another action
@@ -32,7 +33,7 @@ function NavScrollExample() {
               <NavDropdown.Item href="#action5">
                 Something else here
               </NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
           </Nav>
           <Form className="d-flex">
             <Form.Control
