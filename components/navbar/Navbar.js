@@ -20,7 +20,7 @@ export default function NavBar() {
             navbarScroll
           >
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="#action2">Laboratory Support Services</Nav.Link>
+            <Nav.Link href="#action2">LSS</Nav.Link>
             <Nav.Link href="#action3">Biology</Nav.Link>
             <Nav.Link href="#action4">Chemistry</Nav.Link>
             <Nav.Link href="#action5">Toxicology</Nav.Link>
