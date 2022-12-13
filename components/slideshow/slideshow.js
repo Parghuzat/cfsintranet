@@ -2,7 +2,6 @@ import React from 'react';
 import Carousel from 'react-material-ui-carousel';
 import { Paper, Button } from '@mui/material';
 
-import styles from './slideshow.module.css';
 import { padding } from '@mui/system';
 
 export default function SlideShow(props)
