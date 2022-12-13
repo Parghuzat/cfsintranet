@@ -6,7 +6,7 @@ export default function Links() {
 
 
     return (
-        <div>
+        <div clasnames="linkitem">
             {LinksItems.map((obj) => {
                 const name = obj.name;
                 return name;
