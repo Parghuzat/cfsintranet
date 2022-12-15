@@ -1,26 +1,26 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 
 export default function News() {
 
-    async function feed() {
-        //change the url of rss feed
-        const req = axios.get('https://api.rss2json.com/v1/api.json?rss_url=https://rss.cbc.ca/lineup/canada-toronto.xml');
-        req instanceof Promise;
-        const res = await req;
-        return req.then(res => {
-          console.log(res.data.items);
-          return res.data.items;
-        })
-      }
-      feed();
+    const [news, setNews] = useState([]);
 
-
+    useEffect(() => {
+        const data = async () => {
+            const result = await axios('https://api.rss2json.com/v1/api.json?rss_url=https://rss.cbc.ca/lineup/canada-toronto.xml');
+            setNews(result.data.items)
+        }
+        data();
+    },[])
 
     return (
 
         <div>
-            <GetNews />
+            {news.map((obj) => {
+                return (
+                    <h2>{obj.title}</h2>
+                )
+            })}
         </div>
     )
 }
