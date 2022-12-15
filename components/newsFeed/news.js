@@ -1,7 +1,7 @@
 import React from 'react';
 import GetNews from '../../pages/api/GetNews';
 
-export default function News(props) {
+export default function News() {
 
     return (
 
