@@ -19,6 +19,7 @@ export default function News() {
             {news.map((obj) => {
                 return (
                     <h2>{obj.title}</h2>
+                    <img src={obj.thumbnail}></img>
                 )
             })}
         </div>
