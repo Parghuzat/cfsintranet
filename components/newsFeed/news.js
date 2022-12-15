@@ -1,7 +1,21 @@
 import React from 'react';
-import GetNews from '../../pages/api/GetNews';
+import axios from 'axios';
 
 export default function News() {
+
+    async function feed() {
+        //change the url of rss feed
+        const req = axios.get('https://api.rss2json.com/v1/api.json?rss_url=https://rss.cbc.ca/lineup/canada-toronto.xml');
+        req instanceof Promise;
+        const res = await req;
+        return req.then(res => {
+          console.log(res.data.items);
+          return res.data.items;
+        })
+      }
+      feed();
+
+
 
     return (
 
