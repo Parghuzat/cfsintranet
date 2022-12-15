@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/index.module.css';
 import NavBar from '../components/navBar/Navbar';
 import SlideShow from '../components/slideShow/SlideShow';
-import News from '../components/newsFeed/news';
+import GetNews from '../components/newsFeed/GetNews';
 //import Links from '../components/links/links';
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
       <NavBar />
       <SlideShow />
       <div className='news-calendar-container'>
-        <News />
+        <GetNews />
       </div>
       
     </div>
