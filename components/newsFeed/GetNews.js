@@ -4,19 +4,23 @@ import NewsFeed from './NewsFeed';
 
 export default function GetNews() {
 
-    const [news, setNews] = useState([]);
+    const [newsItem, setNewsItem] = useState([]);
+    const [rssFeed, setRssFeed] = useState([]);
 
     useEffect(() => {
         const data = async () => {
             const result = await axios('https://api.rss2json.com/v1/api.json?rss_url=https://rss.cbc.ca/lineup/canada-toronto.xml');
-            setNews(result.data.items)
+            setNewsItem(result.data.items);
+            setRssFeed(result.data);
         }
         data();
     },[])
-
+    console.log(rssFeed);
+    console.log(newsItem);
     return (
         <div>
-            {news.map((obj) => {
+            <p>{rssFeed.feed.title}</p>
+            {newsItem.map((obj) => {
                 return ( <NewsFeed data={obj} /> )
             })}
         </div>
