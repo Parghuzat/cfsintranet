@@ -15,7 +15,6 @@ export default function GetNews() {
     },[])
 
     return (
-
         <div>
             {news.map((obj) => {
                 return ( <NewsFeed data={obj} /> )
