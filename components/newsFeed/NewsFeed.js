@@ -4,12 +4,13 @@ import { Box } from '@mui/material';
 import '../newsFeed/NewsFeed.module.css';
 import { WrappedBuildError } from 'next/dist/server/base-server';
 
+//this component renders each news feed
 
 export default function NewsFeed(props) {
     const data = props.data;
     
-
     function findImgUrl () {
+        //to find <img> src link embeded in the description tag of the XML file
         const start = data.description.search(/src=/i) + 5;
         const end = data.description.substring(start).search(/"/i) + start;
         const link = data.description.substring(start,end);
@@ -33,9 +34,7 @@ export default function NewsFeed(props) {
                 borderRadius: 2,
                 fontWeight: 'bold',
                 fontSize: 14,
-                textDecoration: 'none',
-                
-                
+                textDecoration: 'none',            
             }}
         >
             <a href={data.link} target='_blank'>
