@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import { Box } from '@mui/material';
 
-import '../newsFeed/NewsFeed.module.css';
-import { WrappedBuildError } from 'next/dist/server/base-server';
+import '../newsFeed/News.module.css';
 
 //this component renders each news feed
 
@@ -21,7 +20,7 @@ export default function NewsFeed(props) {
         <Box
             sx={{
                 display: 'flex',
-                flexDirection: 'column',
+                flexDirection: 'row',
                 alignContent: 'center',
                 alignItems: 'center',
                 pt: '20px',
@@ -33,12 +32,12 @@ export default function NewsFeed(props) {
                 borderColor: 'dark',
                 borderRadius: 2,
                 fontWeight: 'bold',
-                fontSize: 14,
+                fontSize: 16,
                 textDecoration: 'none',            
             }}
         >
             <a href={data.link} target='_blank'>
-                <img src={findImgUrl(data.description)} width="150" height="auto"></img>
+                <img src={findImgUrl(data.description)} width="240" height="auto"></img>
                 <p >{data.title}</p>
             </a>
                 

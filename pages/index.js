@@ -12,7 +12,12 @@ export default function Home() {
       <NavBar />
       <SlideShow />
       <div className='news-calendar-container'>
-        <GetNews />
+        <div className='news-container'>
+          <GetNews />
+        </div>
+        <div className='calenlar-container'>
+          {/* <Calendar /> */}
+        </div>
       </div>
       
     </div>

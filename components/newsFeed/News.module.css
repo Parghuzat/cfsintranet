@@ -1,0 +1,7 @@
+.newsCards-container{
+  display: flex;
+  flex-direction: column;
+}
+.newsCard {
+  align-items: center;
+}

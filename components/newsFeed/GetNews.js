@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import NewsFeed from './NewsFeed';
+import '../newsFeed/News.module.css';
 
 export default function GetNews() {
 
@@ -17,8 +18,8 @@ export default function GetNews() {
     },[])
 
     return (
-        <div>
-            <img src={rssFeed.feed.image} ></img>
+        <div className='newsCards-container'>
+           {/* <img src={rssFeed.feed.image} ></img> */}
             {newsItem.map((obj) => {
                 return ( <NewsFeed data={obj} /> )
             })}

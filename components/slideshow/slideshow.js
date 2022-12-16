@@ -16,7 +16,7 @@ export default function SlideShow(props)
             description: "Hello World!"
         },
         {
-            name: "Item # 2",
+            name: "Item # 3",
             description: "Hello World!"
         }
     ]
