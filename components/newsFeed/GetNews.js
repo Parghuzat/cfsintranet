@@ -15,11 +15,10 @@ export default function GetNews() {
         }
         data();
     },[])
-    console.log(rssFeed);
-    console.log(newsItem);
+
     return (
         <div>
-            <p>{rssFeed.feed.title}</p>
+            <img src={rssFeed.feed.image} ></img>
             {newsItem.map((obj) => {
                 return ( <NewsFeed data={obj} /> )
             })}
