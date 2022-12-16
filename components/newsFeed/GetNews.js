@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
-import Newsfeed from './NewsFeed';
+import NewsFeed from './NewsFeed';
 
 export default function GetNews() {
 
@@ -18,7 +18,7 @@ export default function GetNews() {
 
         <div>
             {news.map((obj) => {
-                return ( <Newsfeed data={obj} /> )
+                return ( <NewsFeed data={obj} /> )
             })}
         </div>
     )
