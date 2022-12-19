@@ -9,7 +9,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 export default function NavBar() {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
+    <Navbar bg="dark" variant="dark" expand="lg" >
       <Container fluid>
         <Navbar.Brand href="/">CFS Intranet</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />

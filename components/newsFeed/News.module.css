@@ -1,7 +1,11 @@
-.newsCards-container{
+.newsCards-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
-.newsCard {
-  align-items: center;
-}
+
+
+/* .newsCard {
+  display: flex;
+  flex-direction: row;
+} */
+

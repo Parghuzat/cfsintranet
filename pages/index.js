@@ -4,6 +4,7 @@ import '../styles/index.module.css';
 import NavBar from '../components/navBar/Navbar';
 import SlideShow from '../components/slideShow/SlideShow';
 import GetNews from '../components/newsFeed/GetNews';
+import Calendar from '../components/calendar/Calendar';
 //import Links from '../components/links/links';
 
 export default function Home() {
@@ -16,7 +17,7 @@ export default function Home() {
           <GetNews />
         </div>
         <div className='calenlar-container'>
-          {/* <Calendar /> */}
+          <Calendar />
         </div>
       </div>
       
