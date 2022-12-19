@@ -11,7 +11,7 @@ export default function GetNews() {
 
     useEffect(() => {
         const data = async () => {
-            const result = await axios('https://api.rss2json.com/v1/api.json?rss_url=https://rss.cbc.ca/lineup/canada-toronto.xml');
+            const result = await axios('https://api.rss2json.com/v1/api.json?rss_url=https://rss.cbc.ca/lineup/topstories.xml');
             setNewsItem(result.data.items);
             setRssFeed(result.data);
         }
@@ -24,7 +24,8 @@ export default function GetNews() {
             sx={{
                 flexDirection: 'row',
                 display: 'inline-flex',
-                flexWrap: 'wrap'
+                flexWrap: 'wrap',
+                justifyContent: 'flex-start'
             }}
         >
             {/* <img src={rssFeed.feed.image} ></img>  */}
