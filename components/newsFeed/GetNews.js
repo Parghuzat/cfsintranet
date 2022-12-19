@@ -48,11 +48,10 @@ export default function GetNews() {
                             textDecoration: 'none',            
                         }}
                         >
-                            <p>pp</p>
                             <a href={obj.link} target='_blank'>
-                            <img src={obj.thumbnail} width="240" height="auto"></img>
-                            <p >{obj.title}</p>
-                        </a>
+                                <img src={obj.thumbnail} width="240" height="auto"></img>
+                                <p >{obj.title}</p>
+                            </a>
                         </Box>
                     
                 )
