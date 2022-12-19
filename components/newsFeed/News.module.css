@@ -1,8 +1,14 @@
-.newsCards-container {
+/* .newsCards-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  width: 50%;
 }
 
+.child{
+  flex: 1;
+  margin:10px 0 0 10px;
+} */
 
 /* .newsCard {
   display: flex;

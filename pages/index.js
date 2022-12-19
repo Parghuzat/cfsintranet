@@ -16,9 +16,9 @@ export default function Home() {
         <div className='news-container'>
           <GetNews />
         </div>
-        <div className='calenlar-container'>
+        {/* <div className='calenlar-container'>
           <Calendar />
-        </div>
+        </div> */}
       </div>
       
     </div>
