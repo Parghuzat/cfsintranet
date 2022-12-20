@@ -1,11 +1,14 @@
 //import './index.module.css';
+import { Box } from '@mui/material';
 
 export default function Calendar() {
 
     return (
-
-        <p >
+        <Box>
+           <p >
             Hi
-        </p>
+        </p> 
+        </Box>
+        
     )
 }
