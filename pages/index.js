@@ -5,6 +5,7 @@ import NavBar from '../components/navBar/Navbar';
 import SlideShow from '../components/slideShow/SlideShow';
 import GetNews from '../components/newsFeed/GetNews';
 import Calendar from '../components/calendar/Calendar';
+import {Grid} from '@mui/material';
 //import Links from '../components/links/links';
 
 export default function Home() {
@@ -12,14 +13,14 @@ export default function Home() {
     <div className='main-container'>
       <NavBar />
       <SlideShow />
-      <div className='news-calendar-container'>
-        <div className='news-container'>
+      <Grid container>
+        <Grid item xs={8}>
           <GetNews />
-        </div>
-        <div className='calenlar-container'>
+        </Grid>
+        <Grid item xs={4}>
           <Calendar />
-        </div>
-      </div>
+        </Grid>
+      </Grid>
       
     </div>
   )
