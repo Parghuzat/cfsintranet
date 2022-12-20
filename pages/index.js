@@ -1,6 +1,5 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/index.module.css';
 import NavBar from '../components/navBar/Navbar';
 import SlideShow from '../components/slideShow/SlideShow';
 import GetNews from '../components/newsFeed/GetNews';
