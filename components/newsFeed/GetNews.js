@@ -26,7 +26,7 @@ export default function GetNews() {
                 display: 'inline-flex',
                 flexWrap: 'wrap',
                 justifyContent: 'center',
-                width: '70%'
+                width: '80%'
             }}
         >
             {/* <img src={rssFeed.feed.image} ></img>  */}
@@ -39,8 +39,8 @@ export default function GetNews() {
                                 flexDirection: 'column',
                                 alignContent: 'center',
                                 alignItems: 'center',
-                                mx: '20px',
-                                my: '20px',
+                                mx: '10px',
+                                my: '10px',
                                 px: '10px',
                                 py: '10px',
                                 width: '200px',
