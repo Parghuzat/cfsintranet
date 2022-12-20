@@ -26,7 +26,8 @@ export default function GetNews() {
                 display: 'inline-flex',
                 flexWrap: 'wrap',
                 justifyContent: 'center',
-                width: '80%'
+                width: '80%',
+                mr: '200px'
             }}
         >
             {/* <img src={rssFeed.feed.image} ></img>  */}
@@ -59,7 +60,6 @@ export default function GetNews() {
                                 <p >{obj.title}</p>
                             </a>
                         </Box>
-                    
                 )
             })}
         </Box>
