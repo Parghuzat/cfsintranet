@@ -2,10 +2,14 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from '../components/navBar/Navbar';
 import SlideShow from '../components/slideShow/SlideShow';
+import CfsNews from '../components/cfsNews/CfsNews';
 import GetNews from '../components/newsFeed/GetNews';
 import Calendar from '../components/calendar/Calendar';
+import Links from '../components/links/links';
+
 import {Grid} from '@mui/material';
-//import Links from '../components/links/links';
+import Link from 'next/link';
+
 
 export default function Home() {
   return (
@@ -13,12 +17,28 @@ export default function Home() {
       <NavBar />
       <SlideShow />
       <Grid container>
-        <Grid item xs={8}>
-          <GetNews />
+
+        <Grid container='left'>
+
         </Grid>
-        <Grid item xs={2}>
-          <Calendar />
+
+        <Grid container='main'>
+
+          <Grid item='cfsNews'>
+            <CfsNews />
+          </Grid>
+          <Grid item='cbcNews'>
+            <GetNews />
+          </Grid>
+          <Grid item='links'>
+            <Links />
+          </Grid>
         </Grid>
+
+        <Grid container='right'>
+
+        </Grid>
+
       </Grid>
     </div>
   )
