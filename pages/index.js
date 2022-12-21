@@ -16,7 +16,7 @@ export default function Home() {
         <Grid item xs={8}>
           <GetNews />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={2}>
           <Calendar />
         </Grid>
       </Grid>

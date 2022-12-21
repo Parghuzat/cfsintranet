@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
-import { Box } from '@mui/material';
+import { Box, Paper } from '@mui/material';
 //import NewsFeed from './NewsFeed';
 //import '../newsFeed/News.module.css';
 
@@ -34,6 +34,7 @@ export default function GetNews() {
            
             {newsItem.map((obj) => {
                 return ( 
+                    <Paper>
                         <Box
                             sx={{
                                 display: 'flex',
@@ -46,9 +47,6 @@ export default function GetNews() {
                                 py: '10px',
                                 width: '200px',
                                 boxShadow: 1,
-                                backgroundColor: 'background.paper',
-                                border: 1,
-                                borderColor: 'dark',
                                 borderRadius: 2,
                                 fontWeight: 'bold',
                                 fontSize: 14,
@@ -60,6 +58,7 @@ export default function GetNews() {
                                 <p >{obj.title}</p>
                             </a>
                         </Box>
+                    </Paper>
                 )
             })}
         </Box>
