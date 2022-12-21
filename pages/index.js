@@ -7,35 +7,81 @@ import GetNews from '../components/newsFeed/GetNews';
 import Calendar from '../components/calendar/Calendar';
 import Links from '../components/links/links';
 
-import {Grid} from '@mui/material';
+import {Grid, Box, Paper} from '@mui/material';
 import Link from 'next/link';
 
-
 export default function Home() {
+
+  
+
   return (
+    
+    
+
     <div className='main-container'>
       <NavBar />
       <SlideShow />
-      <Grid container>
 
-        <Grid container='left'>
+      {/* main section */}
 
+    <Box
+      sx={{
+        flexDirection: 'row',
+        display: 'inline-flex',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+        width: '80%',
+        mr: '200px'
+    }}
+    >
+      <Box>
+        <h2>  
+          Left Section
+        </h2>
+      </Box>
+
+      <Box>
+        
+      </Box>
+
+      <Box>
+        
+      </Box>
+
+    </Box>
+
+
+
+      <Grid container spacing={2}>
+
+        <Grid container item spacing={2}>
+          <FormRow />
+          <div>
+            <h2>  
+              This is the Left Section
+            </h2>
+          </div>
         </Grid>
 
-        <Grid container='main'>
+        {/* center section */}
+        <Grid container item spacing={2}>
 
           <Grid item='cfsNews'>
             <CfsNews />
           </Grid>
+
           <Grid item='cbcNews'>
             <GetNews />
           </Grid>
+
           <Grid item='links'>
             <Links />
           </Grid>
+
         </Grid>
 
-        <Grid container='right'>
+        {/* right section */}
+        <Grid container item spacing={2}>
 
         </Grid>
 
