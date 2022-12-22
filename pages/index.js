@@ -27,7 +27,6 @@ export default function Home() {
     <Box
       sx={{
         flexDirection: 'row',
-        display: 'inline-flex',
         flexWrap: 'wrap',
         justifyContent: 'center',
         width: '80%',
@@ -41,51 +40,23 @@ export default function Home() {
       </Box>
 
       <Box>
+        <CfsNews />
+        <GetNews />
         
       </Box>
 
-      <Box>
-        
+      <Box
+        sx={{
+          justifyContent: 'center',
+          justifyItems: 'center'
+        }}
+      >
+        <h2>
+          Right Section
+        </h2>
       </Box>
 
     </Box>
-
-
-
-      <Grid container spacing={2}>
-
-        <Grid container item spacing={2}>
-          <FormRow />
-          <div>
-            <h2>  
-              This is the Left Section
-            </h2>
-          </div>
-        </Grid>
-
-        {/* center section */}
-        <Grid container item spacing={2}>
-
-          <Grid item='cfsNews'>
-            <CfsNews />
-          </Grid>
-
-          <Grid item='cbcNews'>
-            <GetNews />
-          </Grid>
-
-          <Grid item='links'>
-            <Links />
-          </Grid>
-
-        </Grid>
-
-        {/* right section */}
-        <Grid container item spacing={2}>
-
-        </Grid>
-
-      </Grid>
     </div>
   )
 }
