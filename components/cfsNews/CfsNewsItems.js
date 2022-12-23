@@ -1,18 +1,23 @@
 export const CfsNewsItems = [
     {
-        title:'This is a test, this title will be a link.'
+        title:'82-year-old Walmart worker can now retire thanks to generous GoFundMe campaign.',
+        description: ''
     },
     {
-        title:'This is a test, this title will be a link.'
+        title:'82-year-old Walmart worker can now retire thanks to generous GoFundMe campaign',
+        description: ''
     },
     {
-        title:'This is a test, this title will be a link.'
+        title:'82-year-old Walmart worker can now retire thanks to generous GoFundMe campaign.',
+        description: ''
     },
     {
-        title:'This is a test, this title will be a link.'
+        title:'82-year-old Walmart worker can now retire thanks to generous GoFundMe campaign.',
+        description: ''
     },
     {
-        title:'This is a test, this title will be a link.'
+        title:'82-year-old Walmart worker can now retire thanks to generous GoFundMe campaign.',
+        description: ''
     }
 
 ]

@@ -9,9 +9,12 @@ export default function CfsNews() {
         <div>
             {CfsNewsItems.map((obj) => {
                 return (
-                    <p href=''>
-                        {obj.title}
-                    </p>
+                    <a href=''>
+                        <p >
+                            {obj.title}
+                        </p>
+                    </a>
+                    
                 )    
             })}      
         </div>
