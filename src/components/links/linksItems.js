@@ -1,18 +1,13 @@
- import 
- 
- 
- 
- 
- export const LinksItems = [
+export const LinksItems = [
     {
         name: 'Wellness',
         url: 'http://jus00aas0941d/cfs-intranet/wellness/SitePages/Home.aspx',
-        avatar: 'public/avatars/concept.jpg'
+        avatar: ''
     },
     {
         name: 'Health and Safety',
         url: 'http://jus00aas0941d/cfs-intranet/health-and-safety',
-        avatar: 'public/avatars/health.png'
+        avatar: '../../../public/avatars/booking.png'
     }
     ,
     {
