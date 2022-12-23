@@ -18,7 +18,7 @@ export default function Links() {
                     {LinksItems.map((obj) => {
                         return (
                             <Grid container spacing={3}>
-                                <Grid item xs={6}>
+                                <Grid item xs={4}>
                                     <a href={obj.url} target='_blank'>
                                         <p>{obj.name}</p> 
                                     </a>

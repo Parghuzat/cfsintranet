@@ -1,43 +1,52 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavBar from '../components/navBar/Navbar';
-import SlideShow from '../components/slideShow/SlideShow';
-import CfsNews from '../components/cfsNews/CfsNews';
-import GetNews from '../components/newsFeed/GetNews';
-import Calendar from '../components/calendar/Calendar';
-import Links from '../components/links/links';
+import NavBar from '../src/components/navbar/Navbar'
+import SlideShow from '../src/components/slideShow/SlideShow';
+import CfsNews from '../src/components/cfsNews/CfsNews';
+import GetNews from '../src/components/newsFeed/GetNews';
+import Calendar from '../src/components/calendar/Calendar';
+import Links from '../src/components/links/links';
+import QuickLinks from '../src/components/links/quickLinks';
 
-import {Grid, Box, Paper} from '@mui/material';
-import Link from 'next/link';
+import {Grid, Box} from '@mui/material';
+
 
 export default function Home() {
 
-  
 
   return (
     
-    
-
     <div className='main-container'>
       <NavBar />
       <SlideShow />
 
       {/* main section */}
 
-    <Box
+    <Grid container sm={2}>
+
+      <Grid container item>
+        <Grid item>
+          1
+        </Grid>
+      </Grid>
+
+      <Grid container item>
+        <Grid item>
+          2
+        </Grid>
+      </Grid>
+    </Grid>
+
+    {/* <Box
       sx={{
         flexDirection: 'row',
         flexWrap: 'wrap',
         justifyContent: 'center',
-        width: '80%',
+        width: '100%',
         mr: '200px'
     }}
     >
-      <Box>
-        <h2>  
-          Left Section
-        </h2>
-      </Box>
+      
 
       <Box>
         <CfsNews />
@@ -54,9 +63,10 @@ export default function Home() {
         <h2>
           Right Section
         </h2>
+        <QuickLinks />
       </Box>
 
-    </Box>
+    </Box> */}
     </div>
   )
 }
