@@ -1,7 +1,7 @@
 import React from 'react';
 import { LinksItems } from './linksItems';
 
-import { Box } from '@mui/material'
+import { Box, Grid } from '@mui/material'
 
 export default function Links() {
 
@@ -15,27 +15,19 @@ export default function Links() {
                     justifyContent: 'center'
                 }}
             >
-                <Box
-                    sx={{
-                        display: 'flex',
-                        flexDirection: 'column',
-                    
-                    }}
-            >
                     {LinksItems.map((obj) => {
-                        
                         return (
-                            <a href={obj.url} target='_blank'>
-                              <p>{obj.name}</p>  
-                            </a>
-                            
+                            <Grid container spacing={3}>
+                                <Grid item xs={6}>
+                                    <a href={obj.url} target='_blank'>
+                                        <p>{obj.name}</p> 
+                                        <img src={obj.avatar} /> 
+                                    </a>
+                                </Grid>
+                            </Grid>
                         )
-                        
                     })}
-
-                </Box>
             </Box>
-             
         </div>
     )
 }

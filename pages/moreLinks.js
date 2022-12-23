@@ -1,6 +1,6 @@
 import React from "react";
 
-import Links from "../components/links/links";
+import Links from "../src/components/links/links";
 
 
 export default function MoreLinks() {
